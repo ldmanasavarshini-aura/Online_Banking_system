@@ -1,23 +1,34 @@
-# 🏦 Secure Banking System
+# Northstar Banking Demo
 
-This project is a simple **Banking System** built using **Java (backend logic)** and **HTML, CSS, JavaScript (frontend UI)**. It simulates basic banking operations like account creation, deposit, withdrawal, transfer, and transaction tracking.
+A small banking demo with a browser dashboard and a separate Java command-line application. The dashboard stores its demo accounts and ledger in browser local storage; it is not connected to a real banking service.
 
-## 🚀 Features
-- Create bank account
-- Deposit and withdraw money
-- Transfer funds between accounts
-- View transaction history
-- Live UI updates for banking actions
-- OOP-based Java backend with HashMap storage
+## Run the dashboard
 
-## 🛠️ Tech Stack
-- Java (OOP, Collections Framework)
-- HTML, CSS (Frontend UI)
-- JavaScript (Frontend logic simulation)
+Requirements: Node.js 18 or later.
 
-## ▶️ How to Run
-- Run `BankingManagement.java` in any Java IDE or terminal
-- Open the HTML file in a browser for UI simulation
+```sh
+npm run dev
+```
 
-## 👨‍💻 Author
-Manasavarshini L.D
+Open the local URL printed by the command (by default, <http://127.0.0.1:5173>). Set the `PORT` environment variable to use a different port.
+
+The dashboard supports account creation, deposits, withdrawals, transfers between accounts, balance summaries, and activity filtering. Demo data and changes persist in the current browser.
+
+## Run the Java CLI
+
+Requirements: JDK 17 or later.
+
+```sh
+javac BankingManagement.java
+java BankingManagement
+```
+
+The Java CLI is an independent in-memory application and does not share data with the browser dashboard.
+
+## Note
+
+This project is for demonstration and learning only. It has no authentication, real backend, or production banking security.
+
+## Author
+
+Manasavarshini L.D.
